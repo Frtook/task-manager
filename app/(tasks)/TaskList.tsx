@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTaskStor } from "@/store/taskStor";
-
+import { Edit, Trash2, Save } from "lucide-react";
 export default function TaskList({ filter }: { filter: string }) {
   const { checkTask, filterTasks, deleteTask, editTask } = useTaskStor();
   const [editingId, setEditingId] = useState<number | null>(null);
@@ -34,7 +34,7 @@ export default function TaskList({ filter }: { filter: string }) {
             value={editedTitle}
             autoFocus
             onChange={(e) => setEditedTitle(e.target.value)}
-            className="flex-1 bg-transparent focus:outline-none border border-black dark:border-white  p-2 "
+            className="flex-1 bg-transparent focus:outline-none border border-black dark:border-white p-2 "
           />
         ) : (
           <p
@@ -46,7 +46,7 @@ export default function TaskList({ filter }: { filter: string }) {
           </p>
         )}
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 items-center">
           <button
             className="text-blue-500"
             onClick={() => {
@@ -58,11 +58,11 @@ export default function TaskList({ filter }: { filter: string }) {
               }
             }}
           >
-            {editingId === task.id ? "Save" : "Edit"}
+            {editingId === task.id ? <Save /> : <Edit />}
           </button>
-          <button className="text-red-500" onClick={() => deleteTask(task.id)}>
+          <Trash2 className="text-red-500" onClick={() => deleteTask(task.id)}>
             Delete
-          </button>
+          </Trash2>
         </div>
       </div>
     );

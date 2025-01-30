@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Manager Application
 
-## Getting Started
+![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 
-First, run the development server:
+A modern task management web application built with Next.js and Zustand state management. Features CRUD operations with dark mode support and persistent local storage.
+
+## Features
+
+- ✅ Create, Read, Update, and Delete tasks
+- 🎨 Dark/Light mode toggle
+- ☑️ Task completion status tracking
+- 🔍 Filter tasks (All/Active/Completed)
+- 📱 Responsive design
+- 🚀 Instant state updates
+- 🛠️ Modern React 19 features
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **State Management**: Zustand
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Build Tool**: Turbopack
+- **Type Safety**: TypeScript
+- **Linting**: ESLint
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/task-manager.git
+```
+2. Install dependencies:
+
+
+```bash
+npm install
+```
+    Run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Add new tasks using the input field
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Click checkboxes to mark tasks complete
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Use the "Edit" button to modify tasks
 
-## Learn More
+- Filter tasks using the top navigation
 
-To learn more about Next.js, take a look at the following resources:
+- Toggle dark mode using the moon/sun icon
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notable Dependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- react@19: Latest React version with experimental features
+- zustand@5: Lightweight state management solution
+- tailwindcss@3: Utility-first CSS framework
+- lucide-react@0.474: Beautiful SVG icons
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please open an issue first to discuss proposed changes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+This combination demonstrates a cutting-edge React/Next.js implementation following modern best practices.
+
+# **[visit](https://g.com)**
