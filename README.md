@@ -70,4 +70,4 @@ Contributions are welcome! Please open an issue first to discuss proposed change
 
 This combination demonstrates a cutting-edge React/Next.js implementation following modern best practices.
 
-# **[visit](https://g.com)**
+# **[visit](https://frtook-task-manager.vercel.app/)**
