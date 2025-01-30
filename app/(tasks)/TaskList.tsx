@@ -11,10 +11,11 @@ export default function TaskList({ filter }: { filter: string }) {
     return (
       <div
         key={task.id}
-        className="flex bg-gray-100 p-4 gap-5 rounded-xl justify-between"
+        className="flex dark:bg-[#1e293b] dark:border-none dark:ring-0 dark:ring-white  bg-gray-100 p-4 gap-5 rounded-xl justify-between"
       >
         <input
           type="checkbox"
+          className=""
           checked={task.complete}
           onChange={() => checkTask(task.id)}
         />

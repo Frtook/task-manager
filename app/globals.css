@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  @apply dark:bg-[#0f172a] transition-colors duration-300 bg-white dark:text-white text-black;
+}
