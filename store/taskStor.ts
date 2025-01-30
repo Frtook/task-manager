@@ -9,6 +9,7 @@ interface TaskStorType {
   getCountTasks: () => number;
   getCompleteTasks: () => number;
   filterTasks: (type: string) => TaskType[];
+  editTask: (id: number, newTitle: string) => void;
 }
 
 export const useTaskStor = create<TaskStorType>()(
@@ -55,6 +56,14 @@ export const useTaskStor = create<TaskStorType>()(
           default:
             return tasks;
         }
+      },
+
+      editTask: (id: number, newTitle: string) => {
+        set((state) => ({
+          tasks: state.tasks.map((task) =>
+            task.id === id ? { ...task, title: newTitle } : task
+          ),
+        }));
       },
     }),
     {

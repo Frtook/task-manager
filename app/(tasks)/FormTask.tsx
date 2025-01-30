@@ -7,8 +7,10 @@ export default function FormTask() {
   const { addTask } = useTaskStor();
 
   const addTaskHandle = (newTask: string) => {
-    addTask(newTask);
-    setNewTask("");
+    if (newTask.trim()) {
+      addTask(newTask);
+      setNewTask("");
+    }
   };
 
   return (
