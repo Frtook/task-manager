@@ -1,19 +1,15 @@
 "use client";
 import { useTaskStor } from "@/store/taskStor";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function FormTask() {
   const [newTask, setNewTask] = useState("");
-  const { addTask, tasks } = useTaskStor();
+  const { addTask } = useTaskStor();
 
   const addTaskHandle = (newTask: string) => {
     addTask(newTask);
     setNewTask("");
   };
-
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
 
   return (
     <div className="flex gap-5 flex-wrap">
