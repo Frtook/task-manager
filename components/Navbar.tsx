@@ -10,9 +10,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex gap-5 justify-between px-8 py-4 border-b border-b-black dark:border-gray-600">
+    <div className="flex items-center gap-5 justify-between px-8 py-4 border-b border-b-black dark:border-gray-600">
       <Image src={logo} width={30} className="bg-[#0f172a]" alt="logo"></Image>
-      <h1 className="text-4xl flex-1 font-bold">Task Manager App</h1>
+      <h1 className="text-xl md:text-3xl lg:text-4xl flex-1 font-bold">
+        Task Manager App
+      </h1>
       {theme === "dark" ? (
         <Sun onClick={handelClick} />
       ) : (
