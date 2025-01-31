@@ -1,6 +1,6 @@
 import { TaskType } from "@/app/types";
 import { create } from "zustand";
-import { createJSONStorage, persist } from "zustand/middleware";
+import { persist } from "zustand/middleware";
 interface TaskStorType {
   tasks: TaskType[];
   addTask: (title: string) => void;
@@ -68,7 +68,6 @@ export const useTaskStor = create<TaskStorType>()(
     }),
     {
       name: "tasks",
-      storage: createJSONStorage(() => localStorage),
     }
   )
 );

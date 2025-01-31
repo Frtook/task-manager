@@ -20,7 +20,7 @@ export default function TaskList({ filter }: { filter: string }) {
     return (
       <div
         key={task.id}
-        className="flex dark:bg-[#1e293b] dark:border-none dark:ring-0 dark:ring-white bg-gray-100 p-4 gap-5 rounded-xl justify-between"
+        className="flex flex-wrap items-center dark:bg-[#1e293b] dark:border-none dark:ring-0 dark:ring-white bg-gray-100 p-4 gap-5 rounded-xl justify-between"
       >
         <input
           type="checkbox"
@@ -34,7 +34,7 @@ export default function TaskList({ filter }: { filter: string }) {
             value={editedTitle}
             autoFocus
             onChange={(e) => setEditedTitle(e.target.value)}
-            className="flex-1 bg-transparent focus:outline-none border border-black dark:border-white p-2 "
+            className=" flex-1 bg-transparent focus:outline-none border border-black dark:border-white p-2 "
           />
         ) : (
           <p
